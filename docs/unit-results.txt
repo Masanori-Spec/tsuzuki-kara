@@ -1,0 +1,220 @@
+TAP version 13
+# Subtest: empty project validates
+ok 1 - empty project validates
+  ---
+  duration_ms: 2.067604
+  type: 'test'
+  ...
+# Subtest: unapproved active record rejected
+ok 2 - unapproved active record rejected
+  ---
+  duration_ms: 0.320554
+  type: 'test'
+  ...
+# Subtest: pending AI record accepted
+ok 3 - pending AI record accepted
+  ---
+  duration_ms: 0.167233
+  type: 'test'
+  ...
+# Subtest: unknown state rejected
+ok 4 - unknown state rejected
+  ---
+  duration_ms: 0.148013
+  type: 'test'
+  ...
+# Subtest: empty title rejected
+ok 5 - empty title rejected
+  ---
+  duration_ms: 0.115694
+  type: 'test'
+  ...
+# Subtest: invalid timestamps rejected
+ok 6 - invalid timestamps rejected
+  ---
+  duration_ms: 0.126271
+  type: 'test'
+  ...
+# Subtest: add creates independent copy
+ok 7 - add creates independent copy
+  ---
+  duration_ms: 0.462699
+  type: 'test'
+  ...
+# Subtest: same key active record conflicts
+ok 8 - same key active record conflicts
+  ---
+  duration_ms: 0.169616
+  type: 'test'
+  ...
+# Subtest: different scope does not conflict
+ok 9 - different scope does not conflict
+  ---
+  duration_ms: 0.301426
+  type: 'test'
+  ...
+# Subtest: NFKC title and case normalization
+ok 10 - NFKC title and case normalization
+  ---
+  duration_ms: 0.323829
+  type: 'test'
+  ...
+# Subtest: unconfirmed replacement throws without mutation
+ok 11 - unconfirmed replacement throws without mutation
+  ---
+  duration_ms: 0.21127
+  type: 'test'
+  ...
+# Subtest: approved replacement marks old as superseded
+ok 12 - approved replacement marks old as superseded
+  ---
+  duration_ms: 0.227323
+  type: 'test'
+  ...
+# Subtest: pending replacement leaves original active
+ok 13 - pending replacement leaves original active
+  ---
+  duration_ms: 0.15887
+  type: 'test'
+  ...
+# Subtest: approval of pending replacement supersedes old
+ok 14 - approval of pending replacement supersedes old
+  ---
+  duration_ms: 0.216547
+  type: 'test'
+  ...
+# Subtest: rejection does not activate a proposal
+ok 15 - rejection does not activate a proposal
+  ---
+  duration_ms: 0.095755
+  type: 'test'
+  ...
+# Subtest: archive and restore returns to pending, not active
+ok 16 - archive and restore returns to pending, not active
+  ---
+  duration_ms: 0.823264
+  type: 'test'
+  ...
+# Subtest: reapproving a former ancestor does not create history cycle
+ok 17 - reapproving a former ancestor does not create history cycle
+  ---
+  duration_ms: 0.274976
+  type: 'test'
+  ...
+# Subtest: global export excludes task-specific records
+ok 18 - global export excludes task-specific records
+  ---
+  duration_ms: 0.089195
+  type: 'test'
+  ...
+# Subtest: task scope overrides same-title global rule
+ok 19 - task scope overrides same-title global rule
+  ---
+  duration_ms: 0.101073
+  type: 'test'
+  ...
+# Subtest: global unrelated conditions still included
+ok 20 - global unrelated conditions still included
+  ---
+  duration_ms: 0.071137
+  type: 'test'
+  ...
+# Subtest: other scopes never leak into export
+ok 21 - other scopes never leak into export
+  ---
+  duration_ms: 0.603943
+  type: 'test'
+  ...
+# Subtest: superseded rules excluded by default
+ok 22 - superseded rules excluded by default
+  ---
+  duration_ms: 0.142586
+  type: 'test'
+  ...
+# Subtest: pending proposals excluded by default
+ok 23 - pending proposals excluded by default
+  ---
+  duration_ms: 0.132881
+  type: 'test'
+  ...
+# Subtest: pending proposals included in a separated section only
+ok 24 - pending proposals included in a separated section only
+  ---
+  duration_ms: 0.10609
+  type: 'test'
+  ...
+# Subtest: history only when explicitly enabled
+ok 25 - history only when explicitly enabled
+  ---
+  duration_ms: 0.229116
+  type: 'test'
+  ...
+# Subtest: source content optional
+ok 26 - source content optional
+  ---
+  duration_ms: 0.126581
+  type: 'test'
+  ...
+# Subtest: rejected can be excluded
+ok 27 - rejected can be excluded
+  ---
+  duration_ms: 0.080441
+  type: 'test'
+  ...
+# Subtest: completed next actions excluded from active
+ok 28 - completed next actions excluded from active
+  ---
+  duration_ms: 0.063095
+  type: 'test'
+  ...
+# Subtest: duplicate active records rejected on import
+ok 29 - duplicate active records rejected on import
+  ---
+  duration_ms: 0.15923
+  type: 'test'
+  ...
+# Subtest: duplicate IDs rejected on import
+ok 30 - duplicate IDs rejected on import
+  ---
+  duration_ms: 0.096586
+  type: 'test'
+  ...
+# Subtest: dangling history reference rejected
+ok 31 - dangling history reference rejected
+  ---
+  duration_ms: 0.088323
+  type: 'test'
+  ...
+# Subtest: cyclic history rejected
+ok 32 - cyclic history rejected
+  ---
+  duration_ms: 0.179652
+  type: 'test'
+  ...
+# Subtest: missing selected project falls back to first project
+ok 33 - missing selected project falls back to first project
+  ---
+  duration_ms: 0.094233
+  type: 'test'
+  ...
+# Subtest: invalid version rejected
+ok 34 - invalid version rejected
+  ---
+  duration_ms: 0.091579
+  type: 'test'
+  ...
+# Subtest: Markdown control characters escaped
+ok 35 - Markdown control characters escaped
+  ---
+  duration_ms: 0.088935
+  type: 'test'
+  ...
+1..35
+# tests 35
+# suites 0
+# pass 35
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 65.06533

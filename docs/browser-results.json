@@ -1,0 +1,102 @@
+[
+  {
+    "app": "tsuzuki-kara",
+    "test": "sample exports current 1200 not superseded 2000",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "pending title excluded by default",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "other scope excluded from global handoff",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "scope override exports 140 not global1200",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "pending can be explicitly included with status",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "history can be explicitly included",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "AI author defaults to pending",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "AI active requires explicit approval",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "approved AI record is exported",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "replacement excludes old text",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "replacement preserves old record and lineage",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "record content is safe text",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "invalid backup leaves record count unchanged",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "restores complete ledger using saved fixture",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "cross-tab notice stops competing saves",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "new project does not leak other decisions",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "backup restores selected project and records",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "Markdown export equals preview",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "clear all resets storage and project",
+    "pass": true
+  },
+  {
+    "app": "tsuzuki-kara",
+    "test": "no JavaScript errors",
+    "pass": true
+  }
+]

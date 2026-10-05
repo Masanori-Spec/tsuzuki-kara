@@ -1,0 +1,14 @@
+{
+  "name": "tsuzuki-kara",
+  "version": "1.0.0",
+  "private": true,
+  "description": "別のAIや新しい会話に、今も有効な決定事項を引き継ぐためのローカルWebアプリです。古い指示・未承認の提案・不採用案を分け、決定の出所と適用範囲を残します。",
+  "scripts": {
+    "test": "node --test tests/core.test.cjs",
+    "check": "node --check common.js && node --check core.js && node --check app.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
